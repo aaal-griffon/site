@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Başvuru Formu</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a id="mainpage" href="#"><img src="../images/logo.png" alt="Griffon IHA Takımı"></a>
+            </div>
+            <nav>
+                <ul>
+                    
+                    <li class="menu-item"><a id="ekipler" href="#">Ekipler</a></li>
+                    <li class="menu-item"><a href="#">Projeler</a></li>
+                    <li class="menu-item"><a id ="iletisim" href="#">İletişim</a></li>
+                    <li class="menu-item"><a id ="SSS" href="#">SSS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <form id="application-form" method="post" action="http://localhost:3000/veri_kaydet">
+        <p style="text-align: right; font-style: italic;">Zorunlu olan alanlar (*)</p>
+    
+        <label for="first-name">* Ad:</label>
+        <input type="text" id="first-name" name="first_name" required>
+    
+        <label for="last-name">* Soyad:</label>
+        <input type="text" id="last-name" name="last_name" required>
+    
+        <label for="email">* E-posta:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="phone">* Telefon:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="donem">* Dönem:</label>
+        <select id="donem" name="donem" required>
+            <option value="seciniz">Seçiniz</option>
+            <option value="27donem">27</option>
+            <option value="26donem">26</option>
+            <option value="25donem">25</option>
+            <option value="24donem">24</option>
+        </select>
+    
+        <label for="education">* Alan:</label>
+        <select id="alan" name="alan" required>
+            <option value="seciniz">Seçiniz</option>
+            <option value="yazilim">Yazılım</option>
+            <option value="tasarim">Tasarım</option>
+            <option value="mekanik">Mekanik</option>
+        </select>
+    
+        <label for="experience">Yaptığınız Projeler Ve Ne Olarak Çalıştınız:</label>
+        <textarea id="experience" name="experience" rows="4"></textarea>
+    
+        <label for="motivation-letter">Sizi Neden Alalım:</label>
+        <textarea id="motivation-letter" name="motivation_letter" rows="4" ></textarea>
+    
+        <button type="submit">Başvur</button>
+    </form>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2023 Girffon - Tüm Hakları Saklıdır</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+/* Temel stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Başlık */
+header {
+    background-color: #82c4e6;
+    color: #000;
+    padding: 11px 0;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* Top bar bölgesinin iç boşluğu */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 15px;
+    /* Menü öğeleri arasındaki yatay boşluk */
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+
+/* Menü Öğeleri */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-item a {
+    background-color: #82c4e6;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Kayıt Ol Öğesi */
+
+.basvur {
+    position: absolute;
+    top: 30px;
+    /* İstediğiniz yukarıdan uzaklık değerini ayarlayın */
+    right: 10px;
+    /* İstediğiniz sağdan uzaklık değerini ayarlayın */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.basvur a {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.basvur a:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+
+
+
+
+/* Hero Bölümü */
+.hero {
+    background-image: url('images/image2.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+.logo {
+    display: inline-block;
+    /* Display as inline-block for centering */
+    text-align: center;
+    /* Center align the contents */
+}
+
+.logo img {
+    max-width: 140px;
+    max-height: 100px;
+    margin-right: 10px;
+}
+
+/* Vizyon ve Misyon Kutuları */
+.vision-mission {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.vision,
+.mission {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Vizyon ve Misyon Başlıkları */
+.vision h2,
+.mission h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Vizyon ve Misyon Metinleri */
+.vision p,
+.mission p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Telif Hakkı Footer Stili */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Link Rengi */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

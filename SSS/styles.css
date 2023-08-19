@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.faq-item {
+    margin-bottom: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.question {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0.5em;
+    color: #666;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.show .answer {
+    max-height: 500px;
+}
+/* Başlık */
+header {
+    background-color: #82c4e6;
+    color: #000;
+    padding: 11px 0;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* Top bar bölgesinin iç boşluğu */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 15px;
+    /* Menü öğeleri arasındaki yatay boşluk */
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+
+/* Menü Öğeleri */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-item a {
+    background-color: #82c4e6;
+    color: #000000;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.logo {
+    display: inline-block;
+    /* Display as inline-block for centering */
+    text-align: center;
+    /* Center align the contents */
+}
+
+.logo img {
+    max-width: 140px;
+    max-height: 100px;
+    margin-right: 10px;
+}
+/* Kayıt Ol Öğesi */
+
+.basvur {
+    position: absolute;
+    top: 30px;
+    /* İstediğiniz yukarıdan uzaklık değerini ayarlayın */
+    right: 10px;
+    /* İstediğiniz sağdan uzaklık değerini ayarlayın */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.basvur a {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.basvur a:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+    /* Telif Hakkı Footer Stili */
+    footer {
+        position: fixed; /* Footer'ı sabit bir pozisyonda olmasını sağlar */
+        bottom: 0; /* Sayfanın en altına sabitlemek için */
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    /* Link Rengi */
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
