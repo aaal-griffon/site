@@ -67,7 +67,7 @@ ekipler.forEach(function (link) {
       event.preventDefault(); // Öntanımlı davranışı engelle
 
       // Yeni bir siteye yönlendir
-      window.location.href = "../ekipler/index.html";
+      window.location.href = "../ekipler";
     });
   });
   basvurLinks.forEach(function (link) {
@@ -75,7 +75,7 @@ ekipler.forEach(function (link) {
       event.preventDefault(); // Öntanımlı davranışı engelle
 
       // Yeni bir siteye yönlendir
-      window.location.href = "../kayit/index.html";
+      window.location.href = "../kayit";
     });
   });
   mainpage.forEach(function (link) {
@@ -83,7 +83,7 @@ ekipler.forEach(function (link) {
       event.preventDefault(); // Öntanımlı davranışı engelle
 
       // Yeni bir siteye yönlendir
-      window.location.href = "../index.html";
+      window.location.href = "../";
     });
   });
   iletisim.forEach(function (link) {
@@ -91,14 +91,14 @@ ekipler.forEach(function (link) {
       event.preventDefault(); // Öntanımlı davranışı engelle
 
       // Yeni bir siteye yönlendir
-      window.location.href = "../iletisim/index.html";
+      window.location.href = "../iletisim";
     });
     SSS.forEach(function (link) {
         link.addEventListener("click", function (event) {
           event.preventDefault(); // Öntanımlı davranışı engelle
     
           // Yeni bir siteye yönlendir
-          window.location.href = "index.html";
+          window.location.href = "";
         });
     });
   });
