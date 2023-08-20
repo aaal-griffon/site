@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const designers = [
         { name: "Ömer Efe ÇELİK", role: "İhanın Kanadından Sorumlu Kişi" },
-        { name: "Kutay Berk GÜL", role: "İhanın Kurulumundan Sorumlu Kişi" },
+      
         // Diğer tasarımcılar burada eklenebilir
     ];
 
