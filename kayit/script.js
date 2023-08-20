@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
           event.preventDefault(); // Öntanımlı davranışı engelle
     
           // Yeni bir siteye yönlendir
-          window.location.href = "../ekipler/index.html";
+          window.location.href = "../ekipler";
         });
       });
       mainpage.forEach(function (link) {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
           event.preventDefault(); // Öntanımlı davranışı engelle
     
           // Yeni bir siteye yönlendir
-          window.location.href = "../index.html";
+          window.location.href = "../";
         });
       });
       iletisim.forEach(function (link) {
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
           event.preventDefault(); // Öntanımlı davranışı engelle
     
           // Yeni bir siteye yönlendir
-          window.location.href = "../iletisim/index.html";
+          window.location.href = "../iletisim/";
         });
       });
       SSS.forEach(function (link) {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
           event.preventDefault(); // Öntanımlı davranışı engelle
     
           // Yeni bir siteye yönlendir
-          window.location.href = "../SSS/index.html";
+          window.location.href = "../SSS/";
         });
     });
   });
