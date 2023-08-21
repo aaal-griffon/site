@@ -5,25 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Başvuru Formu</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="logo">
-                <a id="mainpage" href="#"><img src="../images/logo.png" alt="Griffon IHA Takımı"></a>
+                <a id="mainpage" href=""><img src="../images/logo_1.webp" alt="Griffon IHA Takımı"></a>
             </div>
             <nav>
                 <ul>
                     
-                    <li class="menu-item"><a id="ekipler" href="#">Ekipler</a></li>
-                    <li class="menu-item"><a href="#">Projeler</a></li>
-                    <li class="menu-item"><a id ="iletisim" href="#">İletişim</a></li>
-                    <li class="menu-item"><a id ="SSS" href="#">SSS</a></li>
+                    <li class="menu-item"><a id="ekipler" href="">Ekipler</a></li>
+                    <li class="menu-item"><a href="">Projeler</a></li>
+                    <li class="menu-item"><a id ="iletisim" href="">İletişim</a></li>
+                    <li class="menu-item"><a id ="SSS" href="">SSS</a></li>
                 </ul>
             </nav>
         </div>
+        <a class="menubuton" id="mobile-menu-button" >
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li class="menu-item2"><a id="ekipler" href="">Ekipler</a></li>
+                <li class="menu-item2"><a href="">Projeler</a></li>
+                <li class="menu-item2"><a id="iletisim" href="">İletişim</a></li>
+                <li class="menu-item2"><a id="SSS" href="">SSS</a></li>
+            </ul>
+        </div>
     </header>
+</body>
+<body2>
     <form id="application-form" method="post" action="http://localhost:3000/veri_kaydet">
         <p style="text-align: right; font-style: italic;">Zorunlu olan alanlar (*)</p>
     
@@ -68,5 +86,5 @@
     <footer>
         <p>&copy; 2023 Girffon - Tüm Hakları Saklıdır</p>
     </footer>
-</body>
+</body2>
 </html>
