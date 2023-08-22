@@ -1,4 +1,4 @@
-# [AAAL Griffon IHA takımı bilgi ve başvuru internet sitesi.](griffon.aaal.net.tr)
+# [AAAL Griffon IHA takımı bilgi ve başvuru internet sitesi.](https://griffon.aaal.net.tr/)
 
 express.static ile sunulup express ile karşılanan başvuru requestleri mysql'e kaydedilir.
 
