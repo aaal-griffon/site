@@ -85,7 +85,11 @@ app.post('/veri_kaydet', (req, res) => {
           res.status(500).send('Bir hata oluştu.');
         } else {
           console.log('Başvuru başarıyla kaydedildi.');
+<<<<<<< HEAD:hserver.js
           res.redirect('https://griffon.aaal.net.tr/kayit/tesekkurform.html');
+=======
+         
+>>>>>>> 5c8d9d93769edf364950ee979a2d75f89dd8ab20:kayit/server.js
         }
       }
     );
@@ -95,6 +99,10 @@ app.post('/veri_kaydet', (req, res) => {
 });
 
 // Serveri dinlemeye başla
+<<<<<<< HEAD:hserver.js
 app.listen(3132, { secure: true }, () => {
+=======
+app.listen(3132, () => {
+>>>>>>> 5c8d9d93769edf364950ee979a2d75f89dd8ab20:kayit/server.js
   console.log('Sunucu 3132 portunda dinleniyor...');
 });
