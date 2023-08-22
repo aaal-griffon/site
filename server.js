@@ -1,7 +1,18 @@
 const express = require('express');
 const mysql = require('mysql2');
-
 const app = express();
+var path = require('path');
+var http = require('http');
+var fs = require('fs');
+
+
+
+var dir = __dirname
+
+//const server = http.createServer(app);
+
+app.use(express.static(dir));
+
 
 // Middleware for parsing request body
 app.use(express.urlencoded({ extended: true }));

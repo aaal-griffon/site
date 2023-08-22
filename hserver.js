@@ -1,7 +1,28 @@
 const express = require('express');
 const mysql = require('mysql2');
-
 const app = express();
+var path = require('path');
+var https = require('https');
+var http = require('http');
+var fs = require('fs');
+
+
+
+var dir = __dirname
+
+const options = {
+  key: fs.readFileSync('key.pem', 'utf8'),
+  cert: fs.readFileSync('cert.pem', 'utf8'),
+  passphrase: process.env.HTTPS_PASSPHRASE || '  '
+};
+
+const server = https.createServer(options, app);
+
+app.use(express.static(dir));
+
+
+
+
 
 // Middleware for parsing request body
 app.use(express.urlencoded({ extended: true }));
@@ -10,9 +31,10 @@ app.use(express.json());
 // Veritabanı bağlantısı için gerekli bilgileri doldurun
 const connection = mysql.createConnection({
   host: 'localhost', // Veritabanı sunucu adı
-  user: 'root', // Veritabanı kullanıcı adı
-  password: '', // Veritabanı parolası
+  user: 'server', // Veritabanı kullanıcı adı
+  password: '3131', // Veritabanı parolası
   database: 'veriler', // Kullanılacak veritabanı adı
+  port: 3131, // Veritabanı portu
 });
 
 // Veritabanı bağlantısını oluştur
@@ -63,7 +85,7 @@ app.post('/veri_kaydet', (req, res) => {
           res.status(500).send('Bir hata oluştu.');
         } else {
           console.log('Başvuru başarıyla kaydedildi.');
-          res.sendFile(__dirname + '/yonlendir.html');
+          res.redirect('https://griffon.aaal.net.tr/kayit/tesekkurform.html');
         }
       }
     );
@@ -73,6 +95,6 @@ app.post('/veri_kaydet', (req, res) => {
 });
 
 // Serveri dinlemeye başla
-app.listen(3000, () => {
-  console.log('Sunucu 3000 portunda dinleniyor...');
+app.listen(3132, { secure: true }, () => {
+  console.log('Sunucu 3132 portunda dinleniyor...');
 });
