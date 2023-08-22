@@ -10,8 +10,8 @@ app.use(express.json());
 // Veritabanı bağlantısı için gerekli bilgileri doldurun
 const connection = mysql.createConnection({
   host: 'localhost', // Veritabanı sunucu adı
-  user: 'root', // Veritabanı kullanıcı adı
-  password: '', // Veritabanı parolası
+  user: 'server', // Veritabanı kullanıcı adı
+  password: '3131', // Veritabanı parolası
   database: 'veriler', // Kullanılacak veritabanı adı
 });
 
@@ -63,7 +63,7 @@ app.post('/veri_kaydet', (req, res) => {
           res.status(500).send('Bir hata oluştu.');
         } else {
           console.log('Başvuru başarıyla kaydedildi.');
-          res.sendFile(__dirname + '/yonlendir.html');
+         
         }
       }
     );
@@ -73,6 +73,6 @@ app.post('/veri_kaydet', (req, res) => {
 });
 
 // Serveri dinlemeye başla
-app.listen(3000, () => {
-  console.log('Sunucu 3000 portunda dinleniyor...');
+app.listen(3132, () => {
+  console.log('Sunucu 3132 portunda dinleniyor...');
 });
