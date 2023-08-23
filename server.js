@@ -75,7 +75,7 @@ app.post('/veri_kaydet', (req, res) => {
           res.status(500).send('Bir hata oluştu.');
         } else {
           console.log('Başvuru başarıyla kaydedildi.');
-          res.redirect('https://griffon.aaal.net.tr/kayit/tesekkurform.html');
+          res.redirect('/kayit/tesekkurform.html');
         }
       }
     );
