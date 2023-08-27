@@ -192,6 +192,7 @@ footer {
     .social-icons a:first-child {
     
         margin-left: 0; /* İlk ikonun sol boşluğunu kaldır */
+        
     }
     
     .social-icons a img {
