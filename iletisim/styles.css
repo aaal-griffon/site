@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 .contact {
@@ -67,6 +68,7 @@ h2 {
     max-height: 100px;
     margin-right: 10px;
 }
+
 /* Başlık */
 header {
     background-color: #82c4e6;
@@ -157,32 +159,70 @@ nav a:hover {
     background-color: #fff;
     color: #3498db;
 }
-    /* Telif Hakkı Footer Stili */
-    footer {
-        position: fixed; /* Footer'ı sabit bir pozisyonda olmasını sağlar */
-        bottom: 0; /* Sayfanın en altına sabitlemek için */
-        width: 100%;
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-    }
-    
-    footer p {
-        margin: 0;
-        font-size: 14px;
-    }
-    
-    /* Link Rengi */
-    footer a {
-        color: #fff;
-        text-decoration: none;
-    }
-    
-    footer a:hover {
-        text-decoration: underline;
-    }
-    /*menu butonlarını gizle */
+
+/* Telif Hakkı Footer Stili */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer p {
+
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    position: relative;
+    /* Pozisyonu göreceli olarak ayarla */
+}
+
+/* Link Rengi */
+footer a {
+
+    color: #000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    text-align: right;
+    /* İkonları sağa hizala */
+    margin-top: auto;
+    /* İkonlardan üstte boşluk bırak */
+}
+
+.social-icons a {
+    display: inline-block;
+    /* İkonları yan yana hizala */
+    margin-left: 10px;
+    /* İkonlar arasında bir boşluk bırak */
+
+}
+
+.social-icons a:first-child {
+
+    margin-left: 0;
+    /* İlk ikonun sol boşluğunu kaldır */
+}
+
+.social-icons a img {
+    width: 30px;
+    /* Genişliği 30 piksel olarak ayarla */
+    height: 30px;
+    /* Yüksekliği de 30 piksel olarak ayarla */
+    margin-right: 10px;
+    /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
+    margin-top: 20px;
+}
+
+/*menu butonlarını gizle */
 .menubuton {
     display: none;
 }
@@ -190,125 +230,137 @@ nav a:hover {
 .mobile-menu {
     display: none;
 }
-    @media (max-width: 767px) {
-        #mobile-menu-button {
-            display: block;
-            /* Mobil menü düğmesini görünür yap */
-        }
-    
-        /* Başlık */
-        header {
-            padding: 8px 0;
-        }
-    
-        .header-container {
-            padding: 5px 10px;
-        }
-    
-        nav li {
-            margin-right: 10px;
-        }
-    
-        nav a {
-            font-size: 14px;
-        }
-    
-    
-        /* Telif Hakkı Footer Stili */
-        footer {
-            padding: 5px 0;
-        }
-    
-        footer p {
-            font-size: 10px;
-        }
-    
-        .menu-item {
-            display: none;
-            /* Normal menüyü gizle */
-        }
-    
-        .basvur {
-            display: none;
-        }
-    
-        .menubuton {
-            position: absolute;
-            top: 24px;
-            /* İstediğiniz yukarıdan uzaklık değerini ayarlayın */
-            right: 10px;
-            /* İstediğiniz sağdan uzaklık değerini ayarlayın */
-            display: inline-block;
-            vertical-align: middle;
-        }
-    
-        .menubuton a {
-            background-color: #3498db;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-    
-        }
-    
-        /* Menü Öğelerinin Rengi */
-        .menu2-item {
-            text-align: right;
-            /* Menü öğelerini sağa hizalayın */
-            margin-right: 15px;
-            /* Sağ taraftan biraz boşluk bırakın */
-        }
-    
-        .menu2-item a {
-            background-color: #82c4e6;
-            color: #000;
-            padding: px 15px;
-            border-radius: 5px;
-        }
-    
-        .menubuton a:hover {
-            background-color: #fff;
-            color: #3498db;
-        }
-    
-        .mobile-menu {
-            display: none;
-            position: absolute;
-            top: 70px;
-            right: 0;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: 200px;
-            padding: 10px;
-        }
-    
-        .mobile-menu ul {
-            list-style: none;
-            margin-bottom: 0px;
-        }
-    
-        .mobile-menu li {
-            margin-bottom: 10px;
-        }
-    
-        .mobile-menu a {
-            text-decoration: none;
-            color: #333;
-            font-size: 16px;
-        }
-    
-        .hamburger-icon {
-            width: 30px;
-            height: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            cursor: pointer;
-        }
-    
-        .hamburger-icon span {
-            width: 100%;
-            height: 4px;
-            background-color: #000;
-        }
+
+@media (max-width: 767px) {
+    #mobile-menu-button {
+        display: block;
+        /* Mobil menü düğmesini görünür yap */
     }
-    
+
+    /* Başlık */
+    header {
+        padding: 8px 0;
+    }
+
+    .header-container {
+        padding: 5px 10px;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+
+    /* Telif Hakkı Footer Stili */
+    footer {
+        padding: 5px 0;
+    }
+
+    footer p {
+
+        font-size: 13px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -40px;
+        margin-bottom: 10px;
+        position: relative; /* Pozisyonu göreceli olarak ayarla */
+    }
+    .social-icons a img {
+        width: 25px; /* Genişliği 30 piksel olarak ayarla */
+        height: 25px; /* Yüksekliği de 30 piksel olarak ayarla */
+        margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
+        margin-top: 20px;
+    }
+
+    .menu-item {
+        display: none;
+        /* Normal menüyü gizle */
+    }
+
+    .basvur {
+        display: none;
+    }
+
+    .menubuton {
+        position: absolute;
+        top: 24px;
+        /* İstediğiniz yukarıdan uzaklık değerini ayarlayın */
+        right: 10px;
+        /* İstediğiniz sağdan uzaklık değerini ayarlayın */
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .menubuton a {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+
+    }
+
+    /* Menü Öğelerinin Rengi */
+    .menu2-item {
+        text-align: right;
+        /* Menü öğelerini sağa hizalayın */
+        margin-right: 15px;
+        /* Sağ taraftan biraz boşluk bırakın */
+    }
+
+    .menu2-item a {
+        background-color: #82c4e6;
+        color: #000;
+        padding: px 15px;
+        border-radius: 5px;
+    }
+
+    .menubuton a:hover {
+        background-color: #fff;
+        color: #3498db;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        padding: 10px;
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        margin-bottom: 0px;
+    }
+
+    .mobile-menu li {
+        margin-bottom: 10px;
+    }
+
+    .mobile-menu a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .hamburger-icon {
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .hamburger-icon span {
+        width: 100%;
+        height: 4px;
+        background-color: #000;
+    }
+}

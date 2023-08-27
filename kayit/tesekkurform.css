@@ -3,7 +3,7 @@ body {
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
-    display: flex;
+
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -96,46 +96,81 @@ nav a:hover {
     margin-right: 10px;
 }
 
+.kutu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ayarladığınız yüksekliğe göre düzenleyebilirsiniz */
+}
+
 .tesekkur-mesaji {
     text-align: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
 }
+
+
 
 h1 {
     color: #333;
 }
 
-/* Telif Hakkı Footer Stili */
 footer {
-    position: fixed;
-    /* Footer'ı sabit bir pozisyonda olmasını sağlar */
-    bottom: 0;
-    /* Sayfanın en altına sabitlemek için */
-    width: 100%;
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-}
 
-footer p {
-    margin: 0;
-    font-size: 14px;
+    width: 100%;
+    position: fixed; /* Change to fixed position */
+    bottom: 0; /* Place at the bottom of the viewport */
 }
-
-/* Link Rengi */
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
+    
+    footer p {
+    
+        font-size: 16px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -40px;
+        margin-bottom: 10px;
+        position: relative; /* Pozisyonu göreceli olarak ayarla */
+    }
+    
+    /* Link Rengi */
+    footer a {
+       
+        color: #000;
+        text-decoration: none;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
+    
+    .social-icons {
+        text-align: right; /* İkonları sağa hizala */
+        margin-top: auto; /* İkonlardan üstte boşluk bırak */
+    }
+    
+    .social-icons a {
+        display: inline-block; /* İkonları yan yana hizala */
+        margin-left: 10px; /* İkonlar arasında bir boşluk bırak */
+        
+    }
+    
+    .social-icons a:first-child {
+    
+        margin-left: 0; /* İlk ikonun sol boşluğunu kaldır */
+    }
+    
+    .social-icons a img {
+        width: 30px; /* Genişliği 30 piksel olarak ayarla */
+        height: 30px; /* Yüksekliği de 30 piksel olarak ayarla */
+        margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
+        margin-top: 20px;
+    }
 .menubuton {
     display: none;
 }
@@ -226,7 +261,34 @@ footer a:hover {
         background-color: #fff;
         color: #3498db;
     }
-
+        /* Telif Hakkı Footer Stili */
+        footer {
+            padding: 5px 0;
+        }
+    
+        footer p {
+    
+            font-size: 13px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -40px;
+            margin-bottom: 10px;
+            position: relative; /* Pozisyonu göreceli olarak ayarla */
+        }
+        .social-icons a img {
+            width: 25px; /* Genişliği 30 piksel olarak ayarla */
+            height: 25px; /* Yüksekliği de 30 piksel olarak ayarla */
+            margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
+            margin-top: 20px;
+        }
+    .kutu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ayarladığınız yüksekliğe göre düzenleyebilirsiniz */
+        width: 80%; /* Örnek olarak genişliği yüzde cinsinden belirledik */
+        margin: 0 auto; /* Merkezlemek için otomatik yatay margin ekledik */
+    }
     .mobile-menu {
         display: none;
         position: absolute;

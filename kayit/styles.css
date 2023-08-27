@@ -3,6 +3,7 @@
         margin: 0;
         padding: 0;
         background-color: #f0f0f0;
+        min-height: 100vh;
     }
 
     form {
@@ -138,28 +139,57 @@
         max-height: 100px;
         margin-right: 10px;
     }
-    /* Telif Hakkı Footer Stili */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
-/* Link Rengi */
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+        
+        footer p {
+        
+            font-size: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -40px;
+            margin-bottom: 10px;
+            position: relative; /* Pozisyonu göreceli olarak ayarla */
+        }
+        
+        /* Link Rengi */
+        footer a {
+           
+            color: #000;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-icons {
+            text-align: right; /* İkonları sağa hizala */
+            margin-top: auto; /* İkonlardan üstte boşluk bırak */
+        }
+        
+        .social-icons a {
+            display: inline-block; /* İkonları yan yana hizala */
+            margin-left: 10px; /* İkonlar arasında bir boşluk bırak */
+            
+        }
+        
+        .social-icons a:first-child {
+        
+            margin-left: 0; /* İlk ikonun sol boşluğunu kaldır */
+        }
+        
+        .social-icons a img {
+            width: 30px; /* Genişliği 30 piksel olarak ayarla */
+            height: 30px; /* Yüksekliği de 30 piksel olarak ayarla */
+            margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
+            margin-top: 20px;
+        }
 
 .menubuton {
     display: none;
@@ -252,15 +282,26 @@ nav a {
     font-size: 14px;
 }
 
-/* Telif Hakkı Footer Stili */
-footer {
-    padding: 5px 0;
-}
+    /* Telif Hakkı Footer Stili */
+    footer {
+        padding: 5px 0;
+    }
 
-footer p {
-    font-size: 10px;
-}
+    footer p {
 
+        font-size: 13px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -40px;
+        margin-bottom: 10px;
+        position: relative; /* Pozisyonu göreceli olarak ayarla */
+    }
+    .social-icons a img {
+        width: 25px; /* Genişliği 30 piksel olarak ayarla */
+        height: 25px; /* Yüksekliği de 30 piksel olarak ayarla */
+        margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
+        margin-top: 20px;
+    }
 .menu-item {
     display: none;
     /* Normal menüyü gizle */

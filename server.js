@@ -73,6 +73,7 @@ app.post('/veri_kaydet', (req, res) => {
         if (err) {
           console.error('Hata:', err);
           res.status(500).send('Bir hata oluştu.');
+          res.redirect('/kayit/hata.html');
         } else {
           console.log('Başvuru başarıyla kaydedildi.');
           res.redirect('/kayit/tesekkurform.html');

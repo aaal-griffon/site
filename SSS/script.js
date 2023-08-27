@@ -36,6 +36,23 @@ const faqs = [
     question: 'Takıma alınan kişileri kim seçecek?',
     answer: " Takım kaptanının liderliğinde, mevcut üyeler tarafından seçilecektir."
   },
+  {
+    question: 'Takıma kaç kişi alınacak?',
+    answer: "Takıma toplam 3 kişi alınacak. Bu kişilerden 2'si tasarımcı ve 1'i yazılımcı olarak alınacak."
+  },
+  {
+    question: 'Takıma alınan kişileri kim seçecek?',
+    answer: " Takım kaptanının liderliğinde, mevcut üyeler tarafından seçilecektir."
+  },
+  {
+    question: 'Takıma kaç kişi alınacak?',
+    answer: "Takıma toplam 3 kişi alınacak. Bu kişilerden 2'si tasarımcı ve 1'i yazılımcı olarak alınacak."
+  },
+  {
+    question: 'Takıma alınan kişileri kim seçecek?',
+    answer: " Takım kaptanının liderliğinde, mevcut üyeler tarafından seçilecektir."
+  },
+  
 
   // Diğer soru-cevapları buraya ekleyebilirsiniz
 ];
