@@ -178,14 +178,6 @@ nav a:hover {
     font-size: 24px;
     margin-bottom: 10px;
 }
-
-/* Vizyon ve Misyon Metinleri */
-.vision p,
-.mission p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
 /* Telif Hakkı Footer Stili */
 footer {
     background-color: #333;
@@ -238,6 +230,14 @@ footer a:hover {
     margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
     margin-top: 20px;
 }
+/* Vizyon ve Misyon Metinleri */
+.vision p,
+.mission p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
 
 /* Telefon Boyutları İçin Özelleştirme */
 @media (max-width: 767px) {
@@ -302,13 +302,6 @@ footer a:hover {
         font-size: 18px;
         margin-bottom: 8px;
     }
-
-    .vision p,
-    .mission p {
-        font-size: 12px;
-        line-height: 1.4;
-    }
-
     /* Telif Hakkı Footer Stili */
     footer {
         padding: 5px 0;
@@ -329,6 +322,13 @@ footer a:hover {
         margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
         margin-top: 20px;
     }
+    .vision p,
+    .mission p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+
     .menu-item {
         display: none;
         /* Normal menüyü gizle */

@@ -136,19 +136,6 @@ nav a:hover {
     vertical-align: middle;
 }
 
-
-.basvur a {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.basvur a:hover {
-    background-color: #fff;
-    color: #3498db;
-}
-
 footer {
     background-color: #333;
     color: #fff;
@@ -201,6 +188,19 @@ footer {
         margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
         margin-top: 20px;
     }
+.basvur a {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.basvur a:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+
     
 /*menu butonlarını gizle */
 .menubuton {
@@ -235,26 +235,6 @@ footer {
     }
 
 
-    /* Telif Hakkı Footer Stili */
-    footer {
-        padding: 5px 0;
-    }
-
-    footer p {
-
-        font-size: 13px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-top: -40px;
-        margin-bottom: 10px;
-        position: relative; /* Pozisyonu göreceli olarak ayarla */
-    }
-    .social-icons a img {
-        width: 25px; /* Genişliği 30 piksel olarak ayarla */
-        height: 25px; /* Yüksekliği de 30 piksel olarak ayarla */
-        margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
-        margin-top: 20px;
-    }
 
     .menu-item {
         display: none;
@@ -281,6 +261,26 @@ footer {
         padding: 10px 20px;
         border-radius: 5px;
 
+    }
+    /* Telif Hakkı Footer Stili */
+    footer {
+        padding: 5px 0;
+    }
+
+    footer p {
+
+        font-size: 13px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -40px;
+        margin-bottom: 10px;
+        position: relative; /* Pozisyonu göreceli olarak ayarla */
+    }
+    .social-icons a img {
+        width: 25px; /* Genişliği 30 piksel olarak ayarla */
+        height: 25px; /* Yüksekliği de 30 piksel olarak ayarla */
+        margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
+        margin-top: 20px;
     }
 
     /* Menü Öğelerinin Rengi */

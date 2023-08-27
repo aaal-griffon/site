@@ -124,57 +124,6 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.member {
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0.5rem;
-    padding: 1rem;
-    border-radius: 8px;
-    width: 200px;
-}
-
-.member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 0.5rem;
-}
-/*menu butonlarını gizle */
-.menubuton {
-    display: none;
-}
-
-.mobile-menu {
-    display: none;
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.hero {
-    background-image: url('../images/heroarka.webp');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
-.hero2 {
-    background-image: url('../images/hero2.webp');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
 footer {
     background-color: #333;
     color: #fff;
@@ -227,6 +176,57 @@ footer {
         margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
         margin-top: 20px;
     }
+.member {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+/*menu butonlarını gizle */
+.menubuton {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    background-image: url('../images/heroarka.webp');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+.hero2 {
+    background-image: url('../images/hero2.webp');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
 @media (max-width: 767px) {
     #mobile-menu-button {
         display: block;
@@ -251,6 +251,25 @@ footer {
     }
 
 
+
+    .menu-item {
+        display: none;
+        /* Normal menüyü gizle */
+    }
+
+    .basvur {
+        display: none;
+    }
+
+    .menubuton {
+        position: absolute;
+        top: 24px;
+        /* İstediğiniz yukarıdan uzaklık değerini ayarlayın */
+        right: 10px;
+        /* İstediğiniz sağdan uzaklık değerini ayarlayın */
+        display: inline-block;
+        vertical-align: middle;
+    }
     /* Telif Hakkı Footer Stili */
     footer {
         padding: 5px 0;
@@ -270,25 +289,6 @@ footer {
         height: 25px; /* Yüksekliği de 30 piksel olarak ayarla */
         margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
         margin-top: 20px;
-    }
-
-    .menu-item {
-        display: none;
-        /* Normal menüyü gizle */
-    }
-
-    .basvur {
-        display: none;
-    }
-
-    .menubuton {
-        position: absolute;
-        top: 24px;
-        /* İstediğiniz yukarıdan uzaklık değerini ayarlayın */
-        right: 10px;
-        /* İstediğiniz sağdan uzaklık değerini ayarlayın */
-        display: inline-block;
-        vertical-align: middle;
     }
 
     .menubuton a {
