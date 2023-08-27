@@ -269,11 +269,12 @@ footer a:hover {
         margin-top: -40px;
         margin-bottom: 10px;
         position: relative; /* Pozisyonu göreceli olarak ayarla */
+        margin-left: -80px;
     }
     .social-icons a img {
         width: 25px; /* Genişliği 30 piksel olarak ayarla */
         height: 25px; /* Yüksekliği de 30 piksel olarak ayarla */
-        margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
+        margin-right: 1px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
         margin-top: 20px;
     }
 
