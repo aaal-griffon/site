@@ -2,13 +2,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     background-color: #f0f0f0;
 }
-
 /* Başlık */
 header {
-    background-color: #82c4e6;
+    
+background-color: #82c4e6;
     color: #000;
     padding: 11px 0;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
@@ -23,11 +22,15 @@ header {
 }
 
 nav ul {
+    z-index: 4;
     list-style: none;
     padding: 0;
+    padding: 0;
     margin: 0;
+    z-index: 1;
     display: flex;
     align-items: center;
+    
 }
 
 nav li {
@@ -147,6 +150,7 @@ nav a:hover {
     /* Display as inline-block for centering */
     text-align: center;
     /* Center align the contents */
+
 }
 
 .logo img {
@@ -178,13 +182,14 @@ nav a:hover {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
 /* Telif Hakkı Footer Stili */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    
+
 }
 
 footer p {
@@ -194,12 +199,13 @@ footer p {
     vertical-align: middle;
     margin-top: -40px;
     margin-bottom: 10px;
-    position: relative; /* Pozisyonu göreceli olarak ayarla */
+    position: relative;
+    /* Pozisyonu göreceli olarak ayarla */
 }
 
 /* Link Rengi */
 footer a {
-   
+
     color: #000;
     text-decoration: none;
 }
@@ -209,27 +215,36 @@ footer a:hover {
 }
 
 .social-icons {
-    text-align: right; /* İkonları sağa hizala */
-    margin-top: auto; /* İkonlardan üstte boşluk bırak */
+    text-align: right;
+    /* İkonları sağa hizala */
+    margin-top: auto;
+    /* İkonlardan üstte boşluk bırak */
 }
 
 .social-icons a {
-    display: inline-block; /* İkonları yan yana hizala */
-    margin-left: 10px; /* İkonlar arasında bir boşluk bırak */
-    
+    display: inline-block;
+    /* İkonları yan yana hizala */
+    margin-left: 10px;
+    /* İkonlar arasında bir boşluk bırak */
+
 }
 
 .social-icons a:first-child {
 
-    margin-left: 0; /* İlk ikonun sol boşluğunu kaldır */
+    margin-left: 0;
+    /* İlk ikonun sol boşluğunu kaldır */
 }
 
 .social-icons a img {
-    width: 30px; /* Genişliği 30 piksel olarak ayarla */
-    height: 30px; /* Yüksekliği de 30 piksel olarak ayarla */
-    margin-right: 10px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
+    width: 30px;
+    /* Genişliği 30 piksel olarak ayarla */
+    height: 30px;
+    /* Yüksekliği de 30 piksel olarak ayarla */
+    margin-right: 10px;
+    /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
     margin-top: 20px;
 }
+
 /* Vizyon ve Misyon Metinleri */
 .vision p,
 .mission p {
@@ -241,6 +256,79 @@ footer a:hover {
 
 /* Telefon Boyutları İçin Özelleştirme */
 @media (max-width: 767px) {
+        /* Hero Bölümü */
+        .hero {
+            padding: 40px 0;
+        }
+    
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+    
+        .hero p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+    
+        .cta-button {
+            padding: 6px 12px;
+        }
+    
+    
+        /* Vizyon ve Misyon Kutuları */
+        .vision-mission {
+            padding: 10px;
+            margin-top: 10px;
+        }
+    
+        .vision,
+        .mission {
+            padding: 10px;
+            margin-bottom: 10px;
+            flex-basis: 100%;
+        }
+    
+        .vision h2,
+        .mission h2 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+    
+        /* Telif Hakkı Footer Stili */
+        footer {
+            padding: 5px 0;
+        }
+    
+        footer p {
+    
+            font-size: 13px;
+            display: inline-block;
+            vertical-align: left;
+            margin-top: -40px;
+            margin-bottom: 10px;
+            margin-left: -80px;
+            position: relative;
+            /* Pozisyonu göreceli olarak ayarla */
+    
+        }
+    
+        .social-icons a img {
+            width: 25px;
+            /* Genişliği 30 piksel olarak ayarla */
+            height: 25px;
+            /* Yüksekliği de 30 piksel olarak ayarla */
+            margin-right: 1px;
+            /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
+            margin-top: 20px;
+        }
+    
+        .vision p,
+        .mission p {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+    
     #mobile-menu-button {
         display: block;
         /* Mobil menü düğmesini görünür yap */
@@ -249,89 +337,34 @@ footer a:hover {
     /* Başlık */
     header {
         padding: 8px 0;
+        position: relative;
+        z-index: 4;
     }
 
     .header-container {
+        position: relative;
+        z-index: 4;
         padding: 5px 10px;
+
     }
 
     nav li {
+        position: relative;
+        z-index: 4;
         margin-right: 10px;
+
     }
 
     nav a {
         font-size: 14px;
+        position: fixed;
     }
 
 
-    /* Hero Bölümü */
-    .hero {
-        padding: 40px 0;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-        margin-bottom: 15px;
-    }
-
-    .hero p {
-        font-size: 1rem;
-        margin-bottom: 15px;
-    }
-
-    .cta-button {
-        padding: 6px 12px;
-    }
-
-
-    /* Vizyon ve Misyon Kutuları */
-    .vision-mission {
-        padding: 10px;
-        margin-top: 10px;
-    }
-
-    .vision,
-    .mission {
-        padding: 10px;
-        margin-bottom: 10px;
-        flex-basis: 100%;
-    }
-
-    .vision h2,
-    .mission h2 {
-        font-size: 18px;
-        margin-bottom: 8px;
-    }
-    /* Telif Hakkı Footer Stili */
-    footer {
-        padding: 5px 0;
-    }
-
-    footer p {
-
-        font-size: 13px;
-        display: inline-block;
-        vertical-align: left;
-        margin-top: -40px;
-        margin-bottom: 10px;
-        margin-left: -80px;
-        position: relative; /* Pozisyonu göreceli olarak ayarla */
-      
-    }
-    .social-icons a img {
-        width: 25px; /* Genişliği 30 piksel olarak ayarla */
-        height: 25px; /* Yüksekliği de 30 piksel olarak ayarla */
-        margin-right: 1px; /* İkonlar arasında bir boşluk bırakmak için sağ kenar boşluğu ekleyin */
-        margin-top: 20px;
-    }
-    .vision p,
-    .mission p {
-        font-size: 12px;
-        line-height: 1.4;
-    }
 
 
     .menu-item {
+
         display: none;
         /* Normal menüyü gizle */
     }
@@ -351,6 +384,7 @@ footer a:hover {
     }
 
     .menubuton a {
+
         background-color: #3498db;
         color: #fff;
         padding: 10px 20px;
@@ -360,13 +394,17 @@ footer a:hover {
 
     /* Menü Öğelerinin Rengi */
     .menu2-item {
-        text-align: right; /* Menü öğelerini sağa hizalayın */
-        margin-right: 15px; /* Sağ taraftan biraz boşluk bırakın */
+        text-align: right;
+        /* Menü öğelerini sağa hizalayın */
+        margin-right: 15px;
+        /* Sağ taraftan biraz boşluk bırakın */
+
     }
+
     .menu2-item a {
         background-color: #82c4e6;
-        color: #000;
-        padding: px 15px;
+        color: #fff;
+        padding: px 1px;
         border-radius: 5px;
     }
 
@@ -376,19 +414,21 @@ footer a:hover {
     }
 
     .mobile-menu {
-        display: none;
+        z-index: 0;
+
         position: absolute;
-        top: 70px;
+        top: 0;
         right: 0;
         background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: 200px;
-        padding: 10px;
+        box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+        width: 20px;
+        height: 120px;
+        padding: 0px;
     }
 
     .mobile-menu ul {
         list-style: none;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
 
     .mobile-menu li {
@@ -402,6 +442,8 @@ footer a:hover {
     }
 
     .hamburger-icon {
+        position: relative;
+        z-index: 4;
         width: 30px;
         height: 20px;
         display: flex;
@@ -415,5 +457,60 @@ footer a:hover {
         height: 4px;
         background-color: #000;
     }
-    
+
+    .logo {
+        background-color: #82c4e6;
+        background-position-x: left;
+        background-size: contain;
+        /* veya contain veya özel bir değer */
+    }
+
+    .logo::before {
+        content: "";
+        /* Pseudo öğeye içerik eklemek için boş bir içerik atayın */
+        position: absolute;
+        /* Pseudo öğeyi pozisyonlandırın */
+        top: -10px;
+        left: 0;
+        width: 100%;
+        /* Pseudo öğenin genişliğini öğe ile aynı yapın */
+        height: 100%;
+        /* Pseudo öğenin yüksekliğini öğe ile aynı yapın */
+        background-color: #82c4e6;
+        /* Dikdörtgenin arkaplan rengini belirleyin */
+        z-index: -3;
+        /* Pseudo öğeyi öğenin altına yerleştirin */
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(-100%);
+        }
+
+        to {
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes slideReverse {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(-110%);
+        }
+    }
+
+    /* Mobil menü açıkken görünür hale getir */
+    .animation-container {
+        animation-duration: 0.1s;
+        /* Animasyon süresi */
+        animation-timing-function: ease-in-out;
+        /* Animasyon hız eğrisi */
+        animation-fill-mode: both;
+        /* Animasyon bitiminde son durumunu koru */
+        animation-iteration-count: 3;
+        /* Animasyonu 3 kez tekrar et */
+    }
 }

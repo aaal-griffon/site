@@ -88,11 +88,12 @@ nav a:hover {
     /* Display as inline-block for centering */
     text-align: center;
     /* Center align the contents */
+
 }
 
 .logo img {
     max-width: 140px;
-    max-height: 100px;
+    max-height: 60px;
     margin-right: 10px;
 }
 
@@ -187,81 +188,6 @@ footer {
         display: block;
         /* Mobil menü düğmesini görünür yap */
     }
-
-    /* Başlık */
-    header {
-        padding: 8px 0;
-    }
-
-    .header-container {
-        padding: 5px 10px;
-    }
-
-    nav li {
-        margin-right: 10px;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
-
-
-    /* Telif Hakkı Footer Stili */
-    footer {
-        padding: 5px 0;
-    }
-
-    footer p {
-        font-size: 10px;
-    }
-
-    .menu-item {
-        display: none;
-        /* Normal menüyü gizle */
-    }
-
-    .basvur {
-        display: none;
-    }
-
-    .menubuton {
-        position: absolute;
-        top: 24px;
-        /* İstediğiniz yukarıdan uzaklık değerini ayarlayın */
-        right: 10px;
-        /* İstediğiniz sağdan uzaklık değerini ayarlayın */
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .menubuton a {
-        background-color: #3498db;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 5px;
-
-    }
-
-    /* Menü Öğelerinin Rengi */
-    .menu2-item {
-        text-align: right;
-        /* Menü öğelerini sağa hizalayın */
-        margin-right: 15px;
-        /* Sağ taraftan biraz boşluk bırakın */
-    }
-
-    .menu2-item a {
-        background-color: #82c4e6;
-        color: #000;
-        padding: px 15px;
-        border-radius: 5px;
-    }
-
-    .menubuton a:hover {
-        background-color: #fff;
-        color: #3498db;
-    }
-        /* Telif Hakkı Footer Stili */
         footer {
             padding: 5px 0;
 
@@ -290,21 +216,109 @@ footer {
         height: 100vh; /* Ayarladığınız yüksekliğe göre düzenleyebilirsiniz */
         width: 80%; /* Örnek olarak genişliği yüzde cinsinden belirledik */
         margin: 0 auto; /* Merkezlemek için otomatik yatay margin ekledik */
+    }    /* Telif Hakkı Footer Stili */
+    footer {
+        padding: 5px 0;
     }
-    .mobile-menu {
+
+    footer p {
+        font-size: 10px;
+    }
+    /* Başlık */
+    header {
+        padding: 8px 0;
+        position: relative;
+        z-index: 4;
+    }
+
+    .header-container {
+        position: relative;
+        z-index: 4;
+        padding: 5px 10px;
+
+    }
+
+    nav li {
+        position: relative;
+        z-index: 4;
+        margin-right: 10px;
+
+    }
+
+    nav a {
+        font-size: 14px;
+        position: fixed;
+    }
+
+
+
+
+    .menu-item {
+
         display: none;
+        /* Normal menüyü gizle */
+    }
+
+    .basvur {
+        display: none;
+    }
+
+    .menubuton {
         position: absolute;
-        top: 70px;
+        top: 24px;
+        /* İstediğiniz yukarıdan uzaklık değerini ayarlayın */
+        right: 10px;
+        /* İstediğiniz sağdan uzaklık değerini ayarlayın */
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .menubuton a {
+
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+
+    }
+
+    /* Menü Öğelerinin Rengi */
+    .menu2-item {
+        text-align: right;
+        /* Menü öğelerini sağa hizalayın */
+        margin-right: 15px;
+        /* Sağ taraftan biraz boşluk bırakın */
+
+    }
+
+    .menu2-item a {
+        background-color: #82c4e6;
+        color: #fff;
+        padding: px 1px;
+        border-radius: 5px;
+    }
+
+    .menubuton a:hover {
+        background-color: #fff;
+        color: #3498db;
+    }
+
+    .mobile-menu {
+        z-index: 0;
+
+        position: absolute;
+        top: 0;
         right: 0;
         background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: 200px;
-        padding: 10px;
+        box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+        width: 20px;
+        height: 120px;
+        padding: 0px;
     }
 
     .mobile-menu ul {
         list-style: none;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
 
     .mobile-menu li {
@@ -318,6 +332,8 @@ footer {
     }
 
     .hamburger-icon {
+        position: relative;
+        z-index: 4;
         width: 30px;
         height: 20px;
         display: flex;
@@ -330,6 +346,62 @@ footer {
         width: 100%;
         height: 4px;
         background-color: #000;
+    }
+
+    .logo {
+        background-color: #82c4e6;
+        background-position-x: left;
+        background-size: contain;
+        /* veya contain veya özel bir değer */
+    }
+
+    .logo::before {
+        content: "";
+        /* Pseudo öğeye içerik eklemek için boş bir içerik atayın */
+        position: absolute;
+        /* Pseudo öğeyi pozisyonlandırın */
+        top: -10px;
+        left: 0;
+        width: 100%;
+        /* Pseudo öğenin genişliğini öğe ile aynı yapın */
+        height: 100%;
+        /* Pseudo öğenin yüksekliğini öğe ile aynı yapın */
+        background-color: #82c4e6;
+        /* Dikdörtgenin arkaplan rengini belirleyin */
+        z-index: -3;
+        /* Pseudo öğeyi öğenin altına yerleştirin */
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(-100%);
+        }
+
+        to {
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes slideReverse {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(-110%);
+        }
+    }
+
+    /* Mobil menü açıkken görünür hale getir */
+    .animation-container {
+        animation-duration: 0.1s;
+        /* Animasyon süresi */
+        animation-timing-function: ease-in-out;
+        /* Animasyon hız eğrisi */
+        animation-fill-mode: both;
+        /* Animasyon bitiminde son durumunu koru */
+        animation-iteration-count: 3;
+        /* Animasyonu 3 kez tekrar et */
     }
 
 }

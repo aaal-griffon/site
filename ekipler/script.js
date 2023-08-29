@@ -9,23 +9,50 @@ const SSS = document.querySelectorAll("#SSS");
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 const body = document.querySelector('body2');
-mobileMenuButton.addEventListener('click', () => {
-  // Mobil menüyü göster veya gizle
-  if (mobileMenu.style.display === 'block') {
-    mobileMenu.style.display = 'none';
-  } else {
-    mobileMenu.style.display = 'block';
-  }
-});
+const content = document.querySelector(".header-container"); // Sayfa içeriği bölümünü seçin
+const delay = 1400; // 2000 milisaniye (2 saniye) gecikme
+const delay2 = 900; 
+let timeout;
+function hideMobileMenu() {
 
-body.addEventListener('click', () => {
-  // Mobil menüyü göster veya gizle
-  if (mobileMenu.style.display === 'block') {
-    mobileMenu.style.display = 'none';
-  }
-});
+  mobileMenu.style.display = 'none';
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  mobileMenu.classList.add("inactive");
+  mobileMenuButton.addEventListener('click', () => {
+    if (mobileMenu.classList.contains("active")) {
+      mobileMenu.style.display = 'block';
+      mobileMenu.style.animation = "slideReverse 1.5s ease-in-out";
+      content.style.animationName = "slideReverse";
+      mobileMenu.classList.add("inactive");
+      mobileMenu.classList.remove("active");
+      timeout = setTimeout(hideMobileMenu, delay);
+    
 
+
+
+  } else {
+      mobileMenu.style.display = 'block';
+      mobileMenu.classList.remove("inactive");
+      mobileMenu.classList.add("active");
+      mobileMenu.style.animation = "slideUp 1.5s ease-in-out";
+      content.style.animationName = "slideUp";
+
+
+  }
+  });
+
+  body.addEventListener('click', () => {
+    // Mobil menüyü göster veya gizle
+    if (mobileMenu.classList.contains("active")) {
+      mobileMenu.style.animation = "slideReverse 1s ease-in-out";
+      content.style.animationName = "slideReverse";
+      mobileMenu.classList.remove("active");
+      mobileMenu.classList.add("inactive");
+      timeout = setTimeout(hideMobileMenu, delay2);
+    }
+  });
   const developers = [
     { name: "Efe Kerem EFEKAN", role: "Python Yazılımcısı" },
     { name: "Asaf Emir ÖZDEMİR", role: "Java Yazılımcısı" },
