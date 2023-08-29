@@ -4,7 +4,7 @@ const app = express();
 var path = require('path');
 var http = require('http');
 var fs = require('fs');
-
+const config = require("./config.json");
 
 
 var dir = __dirname
@@ -19,13 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Veritabanı bağlantısı için gerekli bilgileri doldurun
-const connection = mysql.createConnection({
-  host: 'localhost', // Veritabanı sunucu adı
-  user: 'server', // Veritabanı kullanıcı adı
-  password: '3131', // Veritabanı parolası
-  database: 'veriler', // Kullanılacak veritabanı adı
-  port: 3131, // Veritabanı portu
-});
+const connection = mysql.createConnection(config.database);
 
 // Veritabanı bağlantısını oluştur
 connection.connect((err) => {
