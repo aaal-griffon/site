@@ -10,8 +10,8 @@ const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 const body = document.querySelector('body2');
 const content = document.querySelector(".header-container"); // Sayfa içeriği bölümünü seçin
-const delay = 1400; // 2000 milisaniye (2 saniye) gecikme
-const delay2 = 900; 
+const delay = 980; // 2000 milisaniye (2 saniye) gecikme
+const delay2 = 480; 
 let timeout;
 function hideMobileMenu() {
 
@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
   mobileMenuButton.addEventListener('click', () => {
     if (mobileMenu.classList.contains("active")) {
       mobileMenu.style.display = 'block';
-      mobileMenu.style.animation = "slideReverse 1.5s ease-in-out";
+      mobileMenu.style.animation = "slideReverse 0.5s ease-in-out";
       content.style.animationName = "slideReverse";
       mobileMenu.classList.add("inactive");
       mobileMenu.classList.remove("active");
-      timeout = setTimeout(hideMobileMenu, delay);
+      timeout = setTimeout(hideMobileMenu, delay2);
     
 
 
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileMenu.style.display = 'block';
       mobileMenu.classList.remove("inactive");
       mobileMenu.classList.add("active");
-      mobileMenu.style.animation = "slideUp 1.5s ease-in-out";
+      mobileMenu.style.animation = "slideUp 1s ease-in-out";
       content.style.animationName = "slideUp";
 
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   body.addEventListener('click', () => {
     // Mobil menüyü göster veya gizle
     if (mobileMenu.classList.contains("active")) {
-      mobileMenu.style.animation = "slideReverse 1s ease-in-out";
+      mobileMenu.style.animation = "slideReverse 0.5s ease-in-out";
       content.style.animationName = "slideReverse";
       mobileMenu.classList.remove("active");
       mobileMenu.classList.add("inactive");

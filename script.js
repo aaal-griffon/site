@@ -10,8 +10,8 @@ const mobileMenu = document.getElementById('mobile-menu');
 const body = document.querySelector('body2');
 const header = document.querySelector('header');
 const content = document.querySelector(".header-container"); // Sayfa içeriği bölümünü seçin
-const delay = 1400; // 2000 milisaniye (2 saniye) gecikme
-const delay2 = 900; 
+const delay = 980; // 2000 milisaniye (2 saniye) gecikme
+const delay2 = 480; 
 let timeout;
 function hideMobileMenu() {
 
@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
   mobileMenuButton.addEventListener('click', () => {
     if (mobileMenu.classList.contains("active")) {
       mobileMenu.style.display = 'block';
-      mobileMenu.style.animation = "slideReverse 1.5s ease-in-out";
+      mobileMenu.style.animation = "slideReverse 0.5s ease-in-out";
       content.style.animationName = "slideReverse";
       mobileMenu.classList.add("inactive");
       mobileMenu.classList.remove("active");
-      timeout = setTimeout(hideMobileMenu, delay);
+      timeout = setTimeout(hideMobileMenu, delay2);
     
 
 
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileMenu.style.display = 'block';
       mobileMenu.classList.remove("inactive");
       mobileMenu.classList.add("active");
-      mobileMenu.style.animation = "slideUp 1.5s ease-in-out";
+      mobileMenu.style.animation = "slideUp 1s ease-in-out";
       content.style.animationName = "slideUp";
 
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   body.addEventListener('click', () => {
     // Mobil menüyü göster veya gizle
     if (mobileMenu.classList.contains("active")) {
-      mobileMenu.style.animation = "slideReverse 1s ease-in-out";
+      mobileMenu.style.animation = "slideReverse 0.5s ease-in-out";
       content.style.animationName = "slideReverse";
       mobileMenu.classList.remove("active");
       mobileMenu.classList.add("inactive");
@@ -95,28 +95,9 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = "SSS/";
     });
   });
-  function adjustElementSizes() {
-    const windowHeight = window.innerHeight;
 
-    // Hero bölüm boyutu ayarla
-    const hero = document.querySelector('.hero');
-    hero.style.height = windowHeight * 0.3 + 'px';
-
-    // Vizyon ve Misyon kutularının boyutlarını ayarla ve içeriklerini büyüt
-    const visionMissionBoxes = document.querySelectorAll('.vision, .mission');
-    visionMissionBoxes.forEach(box => {
-      const targetHeight = windowHeight * 0.3; // Ekran yüksekliğinin %60'ı
-      box.style.height = targetHeight + 'px';
-
-      // Kutu içindeki yazıları büyüt
-      const textElements = box.querySelectorAll('h2, p');
-      textElements.forEach(textElement => {
-        const fontSize = targetHeight * 0.08; // Örnek: Kutu yüksekliğinin %8'i
-        textElement.style.fontSize = fontSize + 'px';
-      });
-    });
    
-  }
+  
 
  //mobile menu codes
   function setMobileMenuStyle() {
@@ -133,6 +114,5 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener('resize', setMobileMenuStyle);
   window.addEventListener('DOMContentLoaded', placeMobileMenuBelowHeader);
   window.addEventListener('resize', placeMobileMenuBelowHeader);
-  window.addEventListener('resize', adjustElementSizes);
-  window.addEventListener('load', adjustElementSizes);
+
 });

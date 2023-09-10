@@ -18,8 +18,8 @@ header {
     width: 100%;
     z-index: 1000;
     /* Diğer içeriğin üzerine çıkması için z-index değeri */
-    background-color: #82c4e6;
-    color: #000;
+    background-color: #221b22;
+    color: #fff;
     padding: 11px 0;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -52,7 +52,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #000;
+    color: #221b22;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
     font-size: 18px;
@@ -76,8 +76,8 @@ nav a:hover {
 }
 
 .menu-item a {
-    background-color: #82c4e6;
-    color: #000000;
+    background-color: #221b22;
+    color: #fff;
     padding: 8px 15px;
     border-radius: 5px;
 }
@@ -327,7 +327,7 @@ footer {
 
     .mobile-menu a {
         text-decoration: none;
-        color: #333;
+        color: #fff;
         font-size: 16px;
     }
 
@@ -345,11 +345,11 @@ footer {
     .hamburger-icon span {
         width: 100%;
         height: 4px;
-        background-color: #000;
+        background-color: #fff;
     }
 
     .logo {
-        background-color: #82c4e6;
+        background-color: #221b22;
         background-position-x: left;
         background-size: contain;
         /* veya contain veya özel bir değer */
@@ -366,7 +366,7 @@ footer {
         /* Pseudo öğenin genişliğini öğe ile aynı yapın */
         height: 100%;
         /* Pseudo öğenin yüksekliğini öğe ile aynı yapın */
-        background-color: #82c4e6;
+        background-color: #221b22;
         /* Dikdörtgenin arkaplan rengini belirleyin */
         z-index: -3;
         /* Pseudo öğeyi öğenin altına yerleştirin */
