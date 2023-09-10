@@ -422,8 +422,8 @@ footer {
         right: 0;
         background-color: #fff;
         box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
-        width: 20px;
-        height: 120px;
+        width: max-content;
+        height: max-content;
         padding: 0px;
     }
 
