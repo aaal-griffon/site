@@ -288,6 +288,11 @@ footer {
         padding: 8px 16px;
         font-size: 14px;
     }
+	
+	.donate-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 
     .vision-mission {
         padding: 20px;
