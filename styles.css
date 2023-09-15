@@ -100,29 +100,6 @@ nav a:hover {
     color: #3498db;
 }
 
-.donate {
-    position: absolute;
-    top: 30px;
-    /* İstediğiniz yukarıdan uzaklık değerini ayarlayın */
-    right: 10px;
-    /* İstediğiniz sağdan uzaklık değerini ayarlayın */
-    display: inline-block;
-    vertical-align: middle;
-}
-
-
-.donate a {
-    background-color: #131212;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.donate a:hover {
-    background-color: #fff;
-    color: #3498db;
-}
-
 .menubuton {
     display: none;
 }
@@ -164,6 +141,21 @@ nav a:hover {
 }
 
 .cta-button:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+.donate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.donate-button:hover {
     background-color: #fff;
     color: #3498db;
 }
