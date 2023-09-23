@@ -57,6 +57,14 @@ app.post('/veri_kaydet', (req, res) => {
   const { first_name, last_name, email, phone, donem, alan, experience, motivation_letter } = req.body;
   console.log('kod buraya kadar geldi');
   if (first_name && last_name && email && phone && donem && alan) {
+    connection.connect((err) => {
+      if (err) {
+        console.error('Veritabanına bağlanırken hata oluştu:', err);
+        return;
+      }
+    
+      console.log('Veritabanına başarıyla bağlandı.');
+    });
     const insertSQL = `INSERT INTO basvuru_tablosu (first_name, last_name, email, phone, donem, alan, experience, motivation_letter)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
 
